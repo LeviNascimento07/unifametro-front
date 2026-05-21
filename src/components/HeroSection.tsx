@@ -3,10 +3,11 @@ import faviconIcon from '../assets/images/UNIFAMETRO-Favicon.webp'
 
 export default function HeroSection() {
   return (
-    <section style={{ minHeight: '480px', position: 'relative', overflow: 'hidden' }}>
-      <div className="d-flex" style={{ minHeight: '480px' }}>
+    <section className="hero-section" style={{ position: 'relative', overflow: 'hidden' }}>
+      <div className="hero-inner">
         {/* Lado verde */}
         <div
+          className="hero-left"
           style={{
             backgroundColor: '#1a4731',
             width: '55%',
@@ -40,6 +41,7 @@ export default function HeroSection() {
 
           {/* Círculo decorativo */}
           <div
+            className="hero-circle"
             style={{
               position: 'absolute',
               right: '-80px',
@@ -61,7 +63,7 @@ export default function HeroSection() {
         </div>
 
         {/* Lado imagem */}
-        <div style={{ width: '45%', position: 'relative', overflow: 'hidden' }}>
+        <div className="hero-right" style={{ width: '45%', position: 'relative', overflow: 'hidden' }}>
           <img
             src={heroImg}
             alt="Clínica Unifametro"

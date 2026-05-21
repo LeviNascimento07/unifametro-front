@@ -93,7 +93,7 @@ export default function Agendamento() {
             </div>
 
             {/* Painel direito — formulário */}
-            <div className="col-md-7" style={{ backgroundColor: '#ffffff', padding: '48px 40px' }}>
+            <div className="col-12 col-md-7 form-panel" style={{ backgroundColor: '#ffffff' }}>
               <h2 style={{ color: '#0f2d1f', fontWeight: 700, fontSize: '1.75rem', marginBottom: '6px' }}>
                 Agendamento virtual
               </h2>

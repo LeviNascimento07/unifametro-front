@@ -48,7 +48,7 @@ export default function EspecialidadesSection() {
 
         {/* Imagem + card */}
         <div className="col-md-8" style={{ position: 'relative' }}>
-          <div style={{ borderRadius: '16px', overflow: 'hidden', height: '360px', position: 'relative' }}>
+          <div className="especialidades-img-inner" style={{ borderRadius: '16px', overflow: 'hidden', height: '360px', position: 'relative' }}>
             <img
               src={clinicaImg}
               alt="Clínica Unifametro"
@@ -64,6 +64,7 @@ export default function EspecialidadesSection() {
 
             {/* Card sobreposto */}
             <div
+              className="especialidades-card-info"
               style={{
                 position: 'absolute',
                 bottom: 0,

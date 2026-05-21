@@ -63,7 +63,7 @@ export default function Especialidades() {
       <Navbar />
 
       {/* Header */}
-      <div style={{ position: 'relative', backgroundColor: '#0f2d1f', padding: '64px 80px', overflow: 'hidden', minHeight: '350px', display: 'flex', alignItems: 'center' }}>
+      <div className="header-padded" style={{ position: 'relative', backgroundColor: '#0f2d1f', padding: '64px 80px', overflow: 'hidden', minHeight: '350px', display: 'flex', alignItems: 'center' }}>
         <img
           src={clinica2Img}
           alt=""

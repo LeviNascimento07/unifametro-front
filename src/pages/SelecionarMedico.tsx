@@ -63,7 +63,7 @@ export default function SelecionarMedico() {
       <Navbar />
 
       {/* Header */}
-      <div style={{ backgroundColor: '#1a4731', padding: '48px 80px' }}>
+      <div className="header-padded" style={{ backgroundColor: '#1a4731', padding: '48px 80px' }}>
         <h2 className="text-white fw-bold" style={{ fontSize: '2rem', marginBottom: '8px' }}>
           Selecionar Médico
         </h2>

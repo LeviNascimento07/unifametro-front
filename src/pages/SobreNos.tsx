@@ -8,6 +8,7 @@ export default function SobreNos() {
 
       {/* Header */}
       <div
+        className="header-padded"
         style={{
           backgroundColor: '#1a4731',
           padding: '64px 80px',

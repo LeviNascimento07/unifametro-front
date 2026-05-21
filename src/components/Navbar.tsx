@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <Container fluid className="px-4">
         <BsNavbar.Brand as={Link} to="/" style={{ padding: 0, margin: 0 }}>
-          <img src={logoUnifametro} alt="Unifametro" style={{ height: '90px', width: 'auto', objectFit: 'contain' }} />
+          <img src={logoUnifametro} alt="Unifametro" className="navbar-logo" />
         </BsNavbar.Brand>
 
         <BsNavbar.Toggle aria-controls="navbar-nav" />

@@ -74,7 +74,7 @@ export default function Cadastro() {
           <div className="row g-0" style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.10)' }}>
 
             {/* Coluna esquerda — formulário */}
-            <div className="col-md-7" style={{ backgroundColor: '#ffffff', padding: '48px 40px', order: 1 }}>
+            <div className="col-12 col-md-7 form-panel" style={{ backgroundColor: '#ffffff', order: 1 }}>
               <h2 style={{ color: '#0f2d1f', fontWeight: 700, fontSize: '1.75rem', marginBottom: '6px' }}>
                 Criar conta
               </h2>

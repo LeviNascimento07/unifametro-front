@@ -99,6 +99,7 @@ export default function MinhasConsultas() {
 
       {/* Header com imagem de fundo */}
       <div
+        className="header-padded"
         style={{
           position: 'relative',
           padding: '56px 80px',
@@ -194,7 +195,7 @@ export default function MinhasConsultas() {
         ) : (
           <div className="row g-4">
             {/* Lista */}
-            <div className="col-md-5" style={{ borderRight: '1px solid #e5e7eb' }}>
+            <div className="col-md-5 col-no-border-mobile" style={{ borderRight: '1px solid #e5e7eb' }}>
               <div className="scroll-lista d-flex flex-column gap-2 pe-2">
                 {agendamentos.length === 0 ? (
                   <div
