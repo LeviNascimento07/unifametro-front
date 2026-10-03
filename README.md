@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+Agendamento de Consultas — Clínica
+Front-end de um sistema de agendamento de consultas por especialidade, desenvolvido como projeto freelance.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 No ar: https://unifametro-front.vercel.app
 
-Currently, two official plugins are available:
+<!-- Adicione aqui um print da tela inicial: ![Tela inicial](docs/home.png) -->
+Funcionalidades
+Cadastro e login de pacientes, com token JWT enviado em todas as requisições
+Lista de especialidades (clínica geral, enfermagem, farmácia, fisioterapia, nutrição, psicologia)
+Escolha do médico e do horário para agendar a consulta
+Tela "Minhas consultas" com os agendamentos do paciente
+Rotas protegidas: sem login, o paciente é redirecionado; com sessão expirada (401), o token é limpo automaticamente
+Stack
+React 19 + TypeScript com Vite
+React Router 7 para navegação e rotas protegidas
+Axios com interceptors para autenticação
+React Bootstrap / Bootstrap 5 para a interface
+API própria em Node.js + Express + PostgreSQL, hospedada na Railway
+Deploy do front-end na Vercel
+Rodando localmente
+npm install
+npm run dev
+A aplicação sobe em http://localhost:5173 e consome a API em produção.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Estrutura
+src/
+├── components/   # Navbar, seções da home e modais
+├── pages/        # Home, Especialidades, Agendamento, Minhas Consultas, Cadastro, Sobre
+├── services/     # Cliente Axios e chamadas à API
+├── types/        # Tipos TypeScript
+└── data/         # Dados estáticos
+Autor
+Levi Nascimento · LinkedIn · GitHub
